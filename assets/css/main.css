@@ -1,0 +1,51 @@
+#side_nav_bg {
+  position: absolute;
+  width: 256px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  /* Secondary/White */
+
+  background: #ffffff;
+  /* sidebar shadow */
+
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+#side_nav_devider{
+  position: absolute;
+  width: 256px;
+  height: 1px;
+  left: 0px;
+  top: 415px;
+
+  /* divider */
+
+  background: #ebeff2;
+}
+#side_bar {
+  position: absolute;
+  width: 256px;
+  left: 1124px;
+  top: 3982px;
+  bottom: 2668px;
+}
+#saas {
+  /* SaaS Kit */
+
+  position: absolute;
+  width: 69px;
+  height: 26px;
+  left: 24px;
+  top: 17px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  /* Main/Accent blue */
+
+  color: #109cf1;
+}
