@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
     <title>GG Form</title>
   </head>
   <body>
@@ -20,16 +37,178 @@
 
     <!-- BEM - Block Element Modifier -->
     <div class="app">
-      <div class="header">
-        <nav></nav>
-      </div>
+      <header class="header">
+        <div class="grid">
+          <!-- begin navbar -->
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <i
+                  class="header__navbar-item--search fa-sharp fa-solid fa-magnifying-glass"
+                ></i>
+                <span class="header__navbar-title">Search for a contact</span>
+              </li>
+              
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item--bell fa-solid fa-bell"></li>
+            </ul>
+          </nav>
+          <!-- end navbar -->
 
-      <div class="container"></div>
+          <!-- begin sidebar -->
+          <nav class="header__sidebar">
+            <ul class="header__sidebar-list">
+              <li class="header__sidebar-item">
+                <span class="header__sidebar-item-saas">SaaS kit</span>
+              </li>
+            </ul>
+
+            <ul class="header__sidebar-list">
+              <li class="header__sidebar-item">
+                <span class="header__sidebar-link">
+                  <img
+                    src="./assets/img/avt.jpg"
+                    alt=""
+                    class="header__sidebar-img"
+                  />
+                  <div class="header__sidebar-info">
+                    <span class="header__sidebar-name">Nguyễn Công Hiệp</span>
+                    <span class="header__sidebar-descriotion"
+                      >hiep@gmail.com</span
+                    >
+                  </div>
+                </span>
+              </li>
+            </ul>
+            <ul class="header__sidebar-list">
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-table-columns"></i>
+                Dashboard
+              </li>
+              <li class="header__sidebar-item">
+                <i
+                  class="header__sidebar-icon fa-solid fa-sharp fa-bars-progress"
+                ></i>
+                Tasks
+              </li>
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-envelope"></i>Email
+              </li>
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-phone"></i>Contact
+              </li>
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-message"></i>Chat
+              </li>
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-ghost"></i>Deals
+              </li>
+            </ul>
+            <ul class="header__sidebar-list">
+              <li class="header__sidebar-item">
+                <i class="header__sidebar-icon fa-solid fa-ellipsis"></i
+                >Settings
+              </li>
+            </ul>
+            <!-- end sidebar -->
+          </nav>
+        </div>
+      </header>
+
+      <div class="container">
+        <button class="container__main-btn">Add contact</button>
+        <table>
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Company name</th>
+              <th>Role</th>
+              <th>Forecast</th>
+              <th>Recent activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>John Doe</td>
+              <td>john@example.com</td>
+              <td>ABC Company</td>
+              <td>Manager</td>
+              <td>$100,000</td>
+              <td>Last week</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>XYZ Corporation</td>
+              <td>Engineer</td>
+              <td>$80,000</td>
+              <td>Yesterday</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>John Doe</td>
+              <td>john@example.com</td>
+              <td>ABC Company</td>
+              <td>Manager</td>
+              <td>$100,000</td>
+              <td>Last week</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>XYZ Corporation</td>
+              <td>Engineer</td>
+              <td>$80,000</td>
+              <td>Yesterday</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>John Doe</td>
+              <td>john@example.com</td>
+              <td>ABC Company</td>
+              <td>Manager</td>
+              <td>$100,000</td>
+              <td>Last week</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>XYZ Corporation</td>
+              <td>Engineer</td>
+              <td>$80,000</td>
+              <td>Yesterday</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>John Doe</td>
+              <td>john@example.com</td>
+              <td>ABC Company</td>
+              <td>Manager</td>
+              <td>$100,000</td>
+              <td>Last week</td>
+            </tr>
+            <tr>
+              <th><input type="checkbox"></th>
+              <td>Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>XYZ Corporation</td>
+              <td>Engineer</td>
+              <td>$80,000</td>
+              <td>Yesterday</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
 
       <footer class="footer"></footer>
     </div>
-    <!--Left Column-->
-
-    <!--End Left-->
   </body>
 </html>
