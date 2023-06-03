@@ -46,7 +46,7 @@
                 <i
                   class="header__navbar-item--search fa-sharp fa-solid fa-magnifying-glass"
                 ></i>
-                <span class="header__navbar-title">Search for a contact</span>
+                <input type="text" class="header__navbar-title" placeholder="Search for a contact">
               </li>
               
             </ul>
@@ -118,7 +118,7 @@
           <nav class="header__sidebar">
             <ul class="header__sidebar-list">
               <li class="header__sidebar-item">
-                <span class="header__sidebar-item-saas">SaaS kit</span>
+                <span class="header__sidebar-item-saas">Google Form</span>
               </li>
             </ul>
 
@@ -175,93 +175,80 @@
       </header>
 
       <div class="container">
-        <button class="container__main-btn">Add contact</button>
+        <div><button class="container__main-btn">Add contact</button></div>
         <table>
           <thead>
             <tr>
-              <th><input type="checkbox"></th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Company name</th>
-              <th>Role</th>
-              <th>Forecast</th>
-              <th>Recent activity</th>
+              <th><input type="checkbox" class="container_checkbox"></th>
+              <th>Author</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Tags</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th><input type="checkbox"></th>
-              <td>John Doe</td>
+              <td>
+                <img src="/assets/img/avt.jpg" alt="ảnh" class="container__main-img">
+                John Doe
+              </td>
               <td>john@example.com</td>
               <td>ABC Company</td>
               <td>Manager</td>
               <td>$100,000</td>
-              <td>Last week</td>
+              <td>
+                <i class="table_hover fa-solid fa-pen-to-square" style="color: #00ff11;"></i>
+                <i class="table_hover fa-sharp fa-solid fa-trash" style="color: #e4683f;"></i>
+              </td>
             </tr>
             <tr>
               <th><input type="checkbox"></th>
-              <td>Jane Smith</td>
-              <td>jane@example.com</td>
-              <td>XYZ Corporation</td>
-              <td>Engineer</td>
-              <td>$80,000</td>
-              <td>Yesterday</td>
-            </tr>
-            <tr>
-              <th><input type="checkbox"></th>
-              <td>John Doe</td>
+              <td>
+                <img src="/assets/img/avt.jpg" alt="ảnh" class="container__main-img">
+                John Doe
+              </td>
               <td>john@example.com</td>
               <td>ABC Company</td>
               <td>Manager</td>
               <td>$100,000</td>
-              <td>Last week</td>
+              <td>
+                <i class="table_hover fa-solid fa-pen-to-square" style="color: #00ff11;"></i>
+                <i class="table_hover fa-sharp fa-solid fa-trash" style="color: #e4683f;"></i>
+              </td>
             </tr>
             <tr>
               <th><input type="checkbox"></th>
-              <td>Jane Smith</td>
-              <td>jane@example.com</td>
-              <td>XYZ Corporation</td>
-              <td>Engineer</td>
-              <td>$80,000</td>
-              <td>Yesterday</td>
-            </tr>
-            <tr>
-              <th><input type="checkbox"></th>
-              <td>John Doe</td>
+              <td>
+                <img src="/assets/img/avt.jpg" alt="ảnh" class="container__main-img">
+                John Doe
+              </td>
               <td>john@example.com</td>
               <td>ABC Company</td>
               <td>Manager</td>
               <td>$100,000</td>
-              <td>Last week</td>
+              <td>
+                <i class="table_hover fa-solid fa-pen-to-square" style="color: #00ff11;"></i>
+                <i class="table_hover fa-sharp fa-solid fa-trash" style="color: #e4683f;"></i>
+              </td>
             </tr>
             <tr>
               <th><input type="checkbox"></th>
-              <td>Jane Smith</td>
-              <td>jane@example.com</td>
-              <td>XYZ Corporation</td>
-              <td>Engineer</td>
-              <td>$80,000</td>
-              <td>Yesterday</td>
-            </tr>
-            <tr>
-              <th><input type="checkbox"></th>
-              <td>John Doe</td>
+              <td>
+                <img src="/assets/img/avt.jpg" alt="ảnh" class="container__main-img">
+                John Doe
+              </td>
               <td>john@example.com</td>
               <td>ABC Company</td>
               <td>Manager</td>
               <td>$100,000</td>
-              <td>Last week</td>
+              <td>
+                <i class="table_hover fa-solid fa-pen-to-square" style="color: #00ff11;"></i>
+                <i class="table_hover fa-sharp fa-solid fa-trash" style="color: #e4683f;"></i>
+              </td>
             </tr>
-            <tr>
-              <th><input type="checkbox"></th>
-              <td>Jane Smith</td>
-              <td>jane@example.com</td>
-              <td>XYZ Corporation</td>
-              <td>Engineer</td>
-              <td>$80,000</td>
-              <td>Yesterday</td>
-            </tr>
-            <!-- Add more rows as needed -->
           </tbody>
         </table>
       </div>
