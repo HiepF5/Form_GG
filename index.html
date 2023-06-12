@@ -38,7 +38,7 @@
     <!-- BEM - Block Element Modifier -->
     <div class="app">
       <header class="header">
-        <div class="grid">
+        
           <!-- begin navbar -->
           <nav class="header__navbar">
             <ul class="header__navbar-list">
@@ -50,9 +50,10 @@
               </li>
               
             </ul>
-            <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--has-notify">
-                <i class="header__navbar-item--bell fa-solid fa-bell"></i>
+            <div class="header__navbar-list">
+                <div class="header__navbar-item--has-notify">
+                  <i class="header__navbar-item--bell fa-solid fa-bell"></i>
+                </div>
                 <div class="header__notify">
                   <header class="header__notify-header">
                     <h3>Thông báo mới</h3>
@@ -108,7 +109,7 @@
                     </li>
                   </ul>
                 </div>
-              </li>
+              
               
             </ul>
           </nav>
@@ -171,11 +172,11 @@
             </ul>
             <!-- end sidebar -->
           </nav>
-        </div>
+        
       </header>
 
       <div class="container">
-        <div><button class="container__main-btn">Add contact</button></div>
+        <div class="container__main-btn-2"><button class="container__main-btn">Add contact</button></div>
         <table>
           <thead>
             <tr>

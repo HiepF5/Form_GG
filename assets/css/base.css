@@ -13,8 +13,10 @@ html{
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .grid{
+    
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
