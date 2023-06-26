@@ -33,8 +33,6 @@ async function handleEditForm() {
   console.log("xư li add form");
   const listForm = await getForm();
   console.log(listForm);
-  //const newId =  (listForm.length) ? listForm[listForm.length - 1].id + 1:1;
-  // console.log(newId)
     var newOJ = {
       id:  parseInt(url_id[1]),
       title: inputEl.value,
@@ -65,3 +63,4 @@ async function editForm(newForm){
         console.log("API edit loi")
     }
 }
+

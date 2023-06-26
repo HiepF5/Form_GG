@@ -61,18 +61,24 @@ let questions = [
 function renderAnswerOption(question) {
   const typeInput = question.type === TYPE_RADIO ? "radio" : "checkbox";
   const answerOption = question.answerOptions;
+  // console.log(answerOption)
   const htmlArr = answerOption.map(
     (option) => `
       <input type="${typeInput}" id="${option.value}" name="${question.id}}" value="${option.value}"/>
         <label for="${option.value}">${option.name}</label><br />
+       
+        <br>
       `
   );
   return `
       <br>
       ${htmlArr.join("")}
+      
       <br>
+       
       `;
 }
+{/* <button onclick="addOption(${question.answerOptions})">Thêm lựa chọn</button> */}
 function renderAnswer(question) {
   switch (question.type) {
     case TYPE_INPUT:
@@ -92,6 +98,7 @@ function renderAnswer(question) {
 function render() {
   // console.log("render")
   const questionList = document.querySelector(".questionList");
+  console.log(questions)
   const htmls = questions
     .map((question, index) => {
       const commonInfoQuestion = `
@@ -110,7 +117,7 @@ function render() {
       return commonInfoQuestion.concat(renderAnswer(question));
     })
     .join("");
-  // console.log(htmls);
+  console.log(htmls);
   questionList.innerHTML = htmls;
   const selectEl = document.querySelectorAll('select')
   Array.from(selectEl).map(selectElement =>{
@@ -118,8 +125,8 @@ function render() {
       const element = e.target;
       const index =  +element.id.split('-')[1];
       const value = +element.value;
-      console.log(index);
-      console.log(value);
+      // console.log(index);
+      // console.log(value);
       changType(index, value);
     })
   }
@@ -142,8 +149,8 @@ function addQuestion(){
     answerOptions: [],
   }
   const newQuestions = [...questions,newQuestion]
-  console.log(newQuestions);
-  console.log(questions);
+  // console.log(newQuestions);
+  // console.log(questions);
  
   setQuestion(newQuestions);
 }
@@ -155,3 +162,15 @@ function changType(index, type){
 function selectedType(questionType, valueType){
   return questionType=== valueType? "selected" : "";
 }
+
+// function addOption(addAnswer){
+//   console.log("click");
+
+//   var newOption = {
+//     name: "new",
+//     value: "30-60 "
+//   }
+//   addAnswer = Object.assign({},addAnswer, newOption );
+//   console.log(addAnswer);
+//   render()
+// }

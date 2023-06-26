@@ -1,6 +1,7 @@
 var inputEl = document.querySelector(".form__main-name");
 var input2El = document.querySelector(".form__main-descri");
-
+const BASE_API = "http://localhost:3000";
+const API_GET_ALL_LIST = `${BASE_API}/lists`;
 
 
 async function handleAddForm() {
@@ -19,6 +20,7 @@ async function handleAddForm() {
     };
     console.log(newOJ);
     await addForm(newOJ);
+    window.location.href = "index.html"
 }
 
 async function addForm(newForm) {

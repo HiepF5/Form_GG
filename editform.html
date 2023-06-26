@@ -51,19 +51,18 @@
             placeholder="Tên câu hỏi"
           />
 
-          <div class="form-container">
-            <select id="inputTypeSelect">
-              <option value="text">Text</option>
-              <option value="radio">Radio</option>
-              <option value="checkbox">Checkbox</option>
-              <option value="color">Color</option>
-            </select>
-          </div>
-
-          <button onclick=handleEditForm()><a>Create</a></button>
+            <div class="questionList">
+           
         </div>
+        <button type="button" onclick="addQuestion()" href="addform.html">Add</button>
+
+        <input type="submit" value="Submit" />
+
+      <button onclick="handleAddForm()">Create</button>
       </div>
     </div>
   </body>
+  
+  <script type="text/javascript" src="./js/seclection2.js"></script>
   <script type="text/javascript" src="./js/editform.js"></script>
 </html>

@@ -51,77 +51,18 @@
             placeholder="Tên câu hỏi"
           />
 
-          <form>
-            <div id="questionList">
-              <div class="question">
-                <p>Chọn loại đầu vào:</p>
-                <select id="questionType" onchange="showQuestionOptions()">
-                  <option value="input">Input</option>
-                  <option value="textarea">Textarea</option>
-                  <option value="radio">Radio</option>
-                  <option value="checkbox">Checkbox</option>
-                </select>
-
-                <div id="inputField">
-                  <p>Câu hỏi input:</p>
-                  <input type="text" name="question_input" /><br /><br />
-                </div>
-
-                <!-- <div id="textareaField" style="display: none">
-                  <p>Câu hỏi textarea:</p>
-                  <textarea type="text" name="question_textarea"></textarea
-                  ><br /><br />
-                </div>
-
-                <div id="radioField" style="display: none">
-                  <p>Câu hỏi radio:</p>
-                  <label for="question_radio_option1">Option 1:</label>
-                  <input
-                    type="radio"
-                    id="question_radio_option1"
-                    name="question_radio"
-                    value="option1"
-                  />
-
-                  <label for="question_radio_option2">Option 2:</label>
-                  <input
-                    type="radio"
-                    id="question_radio_option2"
-                    name="question_radio"
-                    value="option2"
-                  /><br /><br />
-                </div>
-
-                <div id="checkboxField" style="display: none">
-                  <p>Câu hỏi checkbox:</p>
-                  <label for="question_checkbox_option1">Option 1:</label>
-                  <input
-                    type="checkbox"
-                    id="question_checkbox_option1"
-                    name="question_checkbox[]"
-                    value="option1"
-                  />
-
-                  <label for="question_checkbox_option2">Option 2:</label>
-                  <input
-                    type="checkbox"
-                    id="question_checkbox_option2"
-                    name="question_checkbox[]"
-                    value="option2"
-                  /><br /><br />
-                </div> -->
-              </div>
-            </div>
-            <button type="button" onclick="addQuestion()">Add</button>
-
-            <input type="submit" value="Submit" />
-          </form>
-
-          <button onclick="handleAddForm()">Create</button>
+            <div class="questionList">
+           
         </div>
+        <button type="button" onclick="addQuestion()" href="addform.html">Add</button>
+
+        <input type="submit" value="Submit" />
+
+      <button onclick="handleAddForm()">Create</button>
       </div>
     </div>
   </body>
+  
+  <script type="text/javascript" src="./js/seclection2.js"></script>
   <script type="text/javascript" src="./js/addform.js"></script>
-  <script type="text/javascript" src="./js/selection.js"></script>
 </html>

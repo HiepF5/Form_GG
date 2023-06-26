@@ -2,40 +2,77 @@
   "lists": [
     {
       "id": 1,
-      "title": "Hoafffzxcdsfsdfsdfdsfsdf",
+      "title": "Hoafffzxcdsf",
       "description": "cxzxczx",
       "author": "hiep",
       "amount": "Manager",
-      "tags": "$1000"
+      "tags": "$1000",
+      "questions": [
+        {
+          "id": 1,
+          "name": "Cau hoi loai input",
+          "type": "TYPE_INPUT",
+          "answer": "",
+          "answerOptions": []
+        },
+        {
+          "id": 2,
+          "name": "Cau hoi loai doan van",
+          "type": "TYPE_PARAGRAPH",
+          "answer": "",
+          "answerOptions": []
+        },
+        {
+          "id": 3,
+          "name": "Cau hoi loai radio",
+          "type": "TYPE_RADIO",
+          "answer": [],
+          "answerOptions": [
+            {
+              "name": "0 - 30",
+              "value": 30
+            },
+            {
+              "name": "31 - 60",
+              "value": 60
+            },
+            {
+              "name": "61 - 100",
+              "value": 100
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": 3,
+      "id": 2,
       "author": "Nguyen Cong Hiep",
       "title": "Hiepf5@gmail.com",
       "description": "ptit",
       "amount": "Manager",
-      "tags": "$1000"
+      "tags": "$1000",
+      "questions": [
+        {
+          "id": 1,
+          "name": "Cau hoi loai input",
+          "type": "TYPE_INPUT",
+          "answer": "",
+          "answerOptions": []
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Hoafffzxcdsfsdfsdfdsfsdf",
-      "description": "cxzxczx",
+      "title": "hh",
+      "description": "hh",
       "author": "hiep",
       "amount": "Manager",
       "tags": "$1000"
     },
     {
       "id": 5,
-      "title": "Hoafffzxcdsfsdfsdfdsfsdf",
-      "description": "cxzxczx",
-      "author": "hiep",
-      "amount": "Manager",
-      "tags": "$1000"
-    },
-    {
-      "id": 6,
-      "title": "Hoafffzxcdsfsdfsdfdsfsdf",
-      "description": "cxzxczx",
+      "title": "f",
+      "description": "f",
       "author": "hiep",
       "amount": "Manager",
       "tags": "$1000"
