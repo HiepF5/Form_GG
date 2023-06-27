@@ -11,21 +11,21 @@
         {
           "id": 1,
           "name": "Cau hoi loai input",
-          "type": "TYPE_INPUT",
+          "type": 1,
           "answer": "",
           "answerOptions": []
         },
         {
           "id": 2,
           "name": "Cau hoi loai doan van",
-          "type": "TYPE_PARAGRAPH",
+          "type": 4,
           "answer": "",
           "answerOptions": []
         },
         {
           "id": 3,
           "name": "Cau hoi loai radio",
-          "type": "TYPE_RADIO",
+          "type": 3,
           "answer": [],
           "answerOptions": [
             {
@@ -41,6 +41,13 @@
               "value": 100
             }
           ]
+        },
+        {
+          "id": 4,
+          "name": "",
+          "type": 4,
+          "answer": [],
+          "answerOptions": []
         }
       ]
     },
@@ -60,22 +67,6 @@
           "answerOptions": []
         }
       ]
-    },
-    {
-      "id": 4,
-      "title": "hh",
-      "description": "hh",
-      "author": "hiep",
-      "amount": "Manager",
-      "tags": "$1000"
-    },
-    {
-      "id": 5,
-      "title": "f",
-      "description": "f",
-      "author": "hiep",
-      "amount": "Manager",
-      "tags": "$1000"
     }
   ]
 }

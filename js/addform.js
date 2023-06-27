@@ -3,7 +3,7 @@ var input2El = document.querySelector(".form__main-descri");
 const BASE_API = "http://localhost:3000";
 const API_GET_ALL_LIST = `${BASE_API}/lists`;
 
-
+// xử lí addForm
 async function handleAddForm() {
   console.log("xư li add form");
   const listForm = await getForm();
@@ -22,7 +22,7 @@ async function handleAddForm() {
     await addForm(newOJ);
     window.location.href = "index.html"
 }
-
+// Post data lên json server
 async function addForm(newForm) {
   try {
     const resp = await fetch(`${API_GET_ALL_LIST}`, {
@@ -37,7 +37,7 @@ async function addForm(newForm) {
     console.log("api add loi ");
   }
 }
-
+// Lấy get để xem lấy id => tạo cho đối tượng tiếp theo
 async function getForm() {
   try {
     const resp = await fetch(`${API_GET_ALL_LIST}`, {
