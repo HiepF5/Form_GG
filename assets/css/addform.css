@@ -1,47 +1,58 @@
-.form__main{
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form__main {
     text-align: center;
-    
-}
-.form__main-title{
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
+  }
+  .grid {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .form__main-title {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 8px;
-}
-.form__main-name{
-    width: 768px;
-    height: 138px;
+  }
+  .form__main-name {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: none;
     margin-top: 50px;
-    border: 0.1px solid #ddd; 
+    border: 0.1px solid #ddd;
     box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
     border-top: 16px solid purple;
     border-radius: 6px;
-
-}
-.form__main-descri{
-    width: 768px;
-    height: 138px;
+  }
+  .form__main-descri {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: none;
     margin-top: 50px;
-    border: 0.1px solid #ddd; 
+    border: 0.1px solid #ddd;
     box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
     border-top: 16px solid purple;
     border-radius: 6px;
-
-}
-.form__main-list{
+  }
+  .form__main-list {
     text-decoration: none;
     list-style: none;
-
-}
-.form__main-item{
-
-}
-.form-container {
+    
+  }
+  .form__main-item {
+  }
+  .form-container {
     max-width: 400px;
     margin: 0 auto;
   }
-
+  
   .form-input {
     display: none;
     width: 100%;
@@ -49,3 +60,80 @@
     padding: 8px;
     font-size: 16px;
   }
+  #question-container {
+    margin-bottom: 20px;
+  
+    /* border: 3px solid rgb(177, 85, 142); */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  button#buttonAdd {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  button#buttonAdd:hover {
+    background-color: #45a049;
+  }
+  
+  button[type="submit"] {
+    background-color: #008cba;
+    color: white;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0078a0;
+  }
+  button#createbtn {
+    background-color: #9818ca;
+    color: white;
+    border: none;
+  }
+  button.buttonAddQuestion {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  .question {
+      max-width: 600px;
+      margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    order: 0.1px solid #ffffff;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid rgb(36, 105, 194);
+    border-radius: 6px;
+  }
+  .inputcss{
+    border: none;
+    width: 600px;
+    height: 50px;
+    margin-top: 10px;
+    border: 0.1px solid #ffffff;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+    border-left: 8px solid purple;
+    border-radius: 6px;
+  }
+  .inputcss2{
+      margin: 0 auto;
+      border: none;
+      text-align: center;
+      width: 600px;
+      height: 50px;
+      margin-top: 10px;
+      border: 0.1px solid #ffffff;
+      box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+      border-left: 8px solid purple;
+      border-radius: 6px;
+  
+  }
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tạo biểu mẫu động</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Tạo biểu mẫu động</h1>
+  <form id="dynamic-form">
+    <label for="form-name">Tên biểu mẫu:</label>
+    <input type="text" id="form-name" required>
+
+    <label for="form-description">Mô tả biểu mẫu:</label>
+    <textarea id="form-description" required></textarea>
+
+    <div id="question-container">
+      <h3>Các câu hỏi:</h3>
+    </div>
+
+    <button type="button" id="add-question-btn">Thêm câu hỏi</button>
+    <button type="submit">Tạo</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
